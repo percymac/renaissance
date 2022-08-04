@@ -248,7 +248,6 @@ nav {
 
 // members in good standing styling
 .main-container {
-    border: 1px solid blueviolet;
     padding: 20px;
     display:flex;
     flex-direction: column;
@@ -258,8 +257,8 @@ nav {
     width: 400px;
 }
 
-.golfer-info {
-    border: 2px solid blue;
+.top-golfer-info, .bottom-golfer-info {
+    border: 2px solid var(--clr-grey-9);
     margin: 20px 200px;
     padding: 10px;
     display: grid;
@@ -269,15 +268,24 @@ nav {
 }
 
 .golfer-img {
-    border: 2px dotted saddlebrown;
+    border: 2px solid var(--clr-grey-9);
     margin: 10px 25px;
-    width: auto; /*200px;*/
-    height: auto; /*200px;*/
+    padding: 4px 8px;
+    width: 350px;
+    height: 200px;
     flex-grow: 2;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.golfer-details {
-    border: 2px dotted cyan;
+img {
+    background-size:cover;    
+}
+
+.top-golfer-details, .bottom-golfer-details {
+    /*border: 2px solid var(--clr-grey-9);*/
     margin: 10px;
     width: aut0; /*300px;*/
     height: 200px;
@@ -286,15 +294,17 @@ nav {
     flex-direction: column;
     justify-content:space-around;
 
-    color: var(--clr-grey-3);
+    color: var(--clr-grey-1);
     font-size: 1rem;
+    font-weight: 400;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
 
 }
 .labels {
-    border: 2px dotted cyan;
+    /*border: 2px dotted cyan;*/
     margin-top: 10px;
+    /*margin-right: 10px;*/
     width: auto; /*150;*/
     height: 200px;
     text-align: right;
@@ -305,6 +315,8 @@ nav {
     color: var(--clr-grey-3);
     font-size: 1rem;
     text-transform: capitalize;
+    text-shadow: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: var(--spacing);
 }
 
@@ -314,7 +326,7 @@ nav {
 
 
 .btn-container {
-    border: 2px solid blue;
+    border: 2px solid var(--clr-grey-9);
     margin: 20px 200px;
     padding: 10px;
     display: flex;
@@ -324,10 +336,16 @@ nav {
 }
 
 .btn {
-    width: 100px;
-    color: var(--clr-grey-3);
+    width: 150px;
+    color: var(--clr-grey-5);
     font-size: 1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
-    border-radius: 4px;
+    border-color: var(--clr-grey-9);
+    border-radius: 5px;
+    /*transition: all 0.2s ease-out;*/
+}
+
+.hide-me {
+    visibility: hidden;
 }
