@@ -13,7 +13,7 @@ const golfer_data = [
         "profession": "Programmer2",
         "cellphone": "0822222222",
         "email": "chippam2@rgc.com",
-        "photo": "chippa1.jpg"        
+        "photo": "13th-Hole-Augusta-National.jpg"        
     },
     {
         "fname": "Chippa3",
