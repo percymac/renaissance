@@ -68,7 +68,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: var(--clr-primary-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -158,7 +158,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
+  background: var(--clr-primary-10);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -167,17 +167,10 @@ nav {
   justify-content:space-between;
   padding: 1rem;
 }
-.nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
-  background: transparent;
-  border-color: transparent;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.nav-toggle:hover {
-  /*color: var(--clr-primary-1);*/
-  transform: rotate(90deg);
+
+.links {
+  height: auto;
+  display: flex;
 }
 .links a {
   color: var(--clr-grey-3);
@@ -197,37 +190,41 @@ nav {
 .social-icons {
   display: none;
 }
-.links {
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}
-.show-links {
-  height: 10rem;
-}
-
 
 /** ----- gallery HTML stylesheet ----- **/
 .gallery-container{
-   /* border: 1px solid red;*/
-    padding: 10px 10px;
-}
-.thumbnail {
-  float:left;
-  width: 450px;
-  border: transparent;
-  margin: 10px 10px;
-  padding: 20px 20px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr) */
+  gap: 1rem; /* instead of colum-gap and row-gap */
+  grid-auto-rows: minmax(300px, auto); /* will always be at least 250px */
+  border: 1px solid black;
 }
 
-.clearboth { clear: both; }
+.gallery-container > div:nth-child(odd) {
+  background:var(--clr-grey-9);
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /*align-items: center;*/
+  border: 3px solid var(--clr-grey-9);     /*transparent;*/
+}
+/*
+.thumbnail > img {
+  justify-self: center;
+}
+*/
 
 /** ----- end of gallery stylesheet ----- **/
 
 
 @media screen and (min-width: 850px) {
   .nav-center {
-    max-width: 1170px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -237,9 +234,7 @@ nav {
   .nav-header {
     padding: 0;
   }
-  .nav-toggle {
-    display: none;
-  }
+ 
   .links {
     height: auto;
     display: flex;
@@ -250,7 +245,9 @@ nav {
   }
   .links a:hover {
     padding: 0;
-    background: transparent;
+    background: var(--clr-primary-7);
+    color: #fff;
+    border-radius: 5px;
   }
   
   .social-icons {

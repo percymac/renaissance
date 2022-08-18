@@ -66,9 +66,11 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  max-width: 1530px;
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: var(--clr-primary-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -158,7 +160,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
+  background: var(--clr-primary-10);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -192,6 +194,7 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
+  font-size: 12px;
 }
 .social-icons {
   display: none;
@@ -212,16 +215,16 @@ nav {
   font-size: 12px;
   font-weight: bold;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 5px 20px;
-  padding: 10px;
+  padding: 0px;
 }
 
 
 .contact-container {
-  border: 2px solid var(--clr-grey-5);
+  border: 2px solid var(--clr-grey-8);
   border-radius: 20px;
-  margin: 10px 30px;
+  margin: 10px 50px;
   padding: 30px 180px;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
@@ -266,7 +269,7 @@ input[type=submit]:hover, input[type=reset]:hover {
     display:flex;
     margin-top: 25px;
     justify-content:  space-evenly;
-    background: var(--clr-grey-10);
+    background:none;
 }
 
 /** ----- end of contact stylesheet ----- **/
@@ -283,9 +286,6 @@ input[type=submit]:hover, input[type=reset]:hover {
   .nav-header {
     padding: 0;
   }
-  .nav-toggle {
-    display: none;
-  }
   .links {
     height: auto;
     display: flex;
@@ -296,7 +296,10 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
   .links a:hover {
     padding: 0;
-    background: transparent;
+    background: var(--clr-primary-7);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
   }
   
   .social-icons {
