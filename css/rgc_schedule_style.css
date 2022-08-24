@@ -72,6 +72,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  height: 100vh;
 }
 ul {
   list-style-type: none;
@@ -196,9 +197,8 @@ Schedule
 ===============
 */
 .schedule-container {
-  height:auto; 
+  position: relative;
   border: 2px solid var(--clr-grey-5);
-  
   width: auto;
   height: auto;
   background-image: url('../images/13th-Hole-Augusta-National.jpg');  
@@ -206,17 +206,123 @@ Schedule
   background-attachment: fixed;
   background-position: left top;
   background-size:cover;  
-
   display: flex;;
   align-content: center;
   justify-content: center;
 }
+/*
+.file-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:abolute;
+
+  border: 2px solid red ;
+  top: 25%;
+  left: 25%;
+}
+*/
+.form-control {
+  background: var(--clr-primary-9);
+  position: absolute;
+  top: 33%;
+  left: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 100px;
+  width: 350px;
+  height: 125px;
+  border: 2px solid var(--clr-grey-5);
+  border-radius: 5px;
+  color: var(--clr-grey-3);
+  color: black;
+}
+
+.game-result {
+  background: var(--clr-primary-10);
+  border: 2px solid var(--clr-grey-5);
+  padding: 5px;
+  height: auto;
+  min-width: 400px;
+  border-radius: 4px;
+  color: var(--clr-grey-3);
+  position: absolute;
+  top:0;
+  right: 0;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.results-heading {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  text-transform:uppercase;
+  color: var(--clr-grey-5);
+}
+.results {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  min-height: 80px;
+  width: auto;
+  border: 2px solid var(--clr-grey-5);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0;
+  margin: 5px 10px;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+#ordered-list {
+  list-style-type: decimal;
+  padding-left: 30px;
+  color: var(--clr-grey-5);
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  min-width: 300px;
+}
+
+.name {
+  min-width: auto;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.score {
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  height: 20px;
+  width: auto;
+  align-items: center;
+}
+.close-btn {
+  color: var(--clr-grey-5);
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  width: 120px;
+  height: 30px;
+  border: 2px solid var(--clr-grey-5);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 table {
-    border: 2px solid var(--clr-grey-7);
+    border: 2px solid var(--clr-grey-5);
     background: var(--clr-primary-10);
     margin: 0 150px;
     width: 900px;
-    height: 720px;
+    height: 650px; /*fit-content; */
     color: var(--clr-grey-5);
 }
 
@@ -226,20 +332,34 @@ tr {
 }
 th {
     text-align: center;
-    /*background: var(--clr-primary-9);*/
     font-size: larger;
+    color: var(--clr-grey-5);
 }
 
 .col-label {
     font-weight: 600;
-    /*background: var(--clr-primary-9);*/
 }
 td {
-    border: 2px solid var(--clr-grey-5);
+    border: 2px solid var(--clr-grey-7);
     width: 100px;
-    height: 15px;
+    height: 10px;
     padding-left: 5px;
 }
+
+.game:hover {
+  color: blue;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hide-me {
+  /*visibility: hidden;*/
+  display: none;
+}
+
+
+
+
 
 @media screen and (min-width:676px) {
   
@@ -248,7 +368,7 @@ td {
 
 @media screen and (min-width: 850px) {
   .nav-center {
-    max-width: 1170px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
     align-items: center;

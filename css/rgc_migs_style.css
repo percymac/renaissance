@@ -69,14 +69,14 @@ Global Styles
 
 body {
   font-family: var(--ff-secondary);
-  /*background: var(--clr-grey-10);*/
+  background: var(--clr-primary-9);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
 
 .body-background-container {
-    height:200px; 
+    height:100vh; 
     border: 2px solid black;
     padding: 15px; 
     width: auto;
@@ -173,7 +173,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
+  background: var(--clr-primary-10);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -182,18 +182,7 @@ nav {
   justify-content:space-between;
   padding: 1rem;
 }
-.nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
-  background: transparent;
-  border-color: transparent;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.nav-toggle:hover {
-  /*color: var(--clr-primary-1);*/
-  transform: rotate(90deg);
-}
+
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
@@ -229,11 +218,9 @@ nav {
     justify-content: space-between;
     padding: 1rem;
   }
+
   .nav-header {
     padding: 0;
-  }
-  .nav-toggle {
-    display: none;
   }
   .links {
     height: auto;
@@ -245,7 +232,9 @@ nav {
   }
   .links a:hover {
     padding: 0;
-    background: transparent;
+    background: var(--clr-primary-7);
+    color: #fff;
+    border-radius: 5px;
   }
   
   .social-icons {
@@ -261,89 +250,127 @@ nav {
   } 
 }
 
-// members in good standing styling
-
-
-
-
+/* members in good standing styling */
 .main-container {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: minmax(500px, auto);
 
-    padding: 0px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    width: 400px;
+    /*justify-content:flex-start;*/
+    /*align-items: top;*/
+    margin-top: 20px;
+    /*padding: 10px 2px;*/
+    height: 580px;
+    border: none; /*1px solid red;*/
 }
 
-.top-golfer-info, .bottom-golfer-info {
-    border: 2px solid var(--clr-grey-9);
-    border-radius: 5px;
-    margin: 20px 200px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    width: 1000px;
-    height: 250px;
-
-    background: var(--clr-white);
-    box-shadow: var(--dark-shadow);
+.golfer-list {
+  border: 2px solid var(--clr-grey-9);
+  border-radius: 5px;
+  display: block;
+  margin: 10px 2px;
+  padding: 10px 20px;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  color: var(--clr-grey-3);
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-shadow: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: var(--spacing);
+  background: var(--clr-primary-10);
+  box-shadow: var(--dark-shadow);
+}
+.golfer-names {
+    margin-left: 15px;
+    list-style-type: decimal;
+}
+.golfer-names li:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  font-weight: 600;
+  background: var(--clr-primary-8);
 }
 
 .golfer-img {
-    border: 2px solid var(--clr-grey-9);
+    border: 2px solid var(--clr-primary-10);
     border-radius: 5px;
-    margin: 10px 25px;
-    padding: 4px 8px;
-    width: 350px;
-    height: 200px;
-    flex-grow: 2;
+    margin: 10px 5px;
+    padding: 0;
+    column-gap: 10px;
+    width: auto;
+    height: auto;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;     
-    background: var(--clr-white);
+    background: var(--clr-primary-10);
+    box-shadow: var(--light-shadow);
+}
+img {
+    background-size:cover;
+    width: 400px;
+    height: 450px;  
+}
+
+.golfer-details-story {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 0;
+  background: var(--clr-primary-10);
+  box-shadow: var(--light-shadow);
+}
+.golfer-data {
+    border: 2px solid var(--clr-grey-9);
+    border-radius: 5px;
+    margin: 10px 10px 10px 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    grid-auto-rows: auto;
+    height: auto;
+    background: var(--clr-primary-10);
     box-shadow: var(--light-shadow);
 }
 
-img {
-    background-size:cover;    
+.golfer-labels {
+  border: none; /*2px solid var(--clr-grey-9);*/
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height: 250px;
+  color: var(--clr-grey-3);
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-shadow: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: var(--spacing);
 }
 
-.top-golfer-details, .bottom-golfer-details {
-    /*border: 2px solid var(--clr-grey-9);*/
-    margin: 10px;
-    width: aut0; /*300px;*/
-    height: 200px;
+.golfer-details {
+    border: none ; /*2px solid var(--clr-grey-9);*/
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: left;
     display: flex;
-    flex-grow: 3;   /*display: flex;*/
-    flex-direction: column;
+    flex-direction: column; 
     justify-content:space-around;
-
-    color: var(--clr-grey-1);
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-
-}
-.labels {
-    /*border: 2px dotted cyan;*/
-    margin-top: 10px;
-    /*margin-right: 10px;*/
-    width: auto; /*150;*/
-    height: 200px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-
+    height: 250px;
     color: var(--clr-grey-3);
     font-size: 1rem;
     text-transform: capitalize;
     text-shadow: 2px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: var(--spacing);
 }
 
@@ -351,32 +378,21 @@ img {
     text-transform: none;
 }
 
-
-.btn-container {
-    border: 2px solid var(--clr-grey-9);
+.golfer-story {
+    border: none; /* 2px solid var(--clr-grey-9);*/
+    height: auto;
+    width: auto;
     border-radius: 5px;
-    margin: 20px 200px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    height:60px;
-
-    background: var(--clr-white);
-    box-shadow: var(--dark-shadow);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 15px;
+    
+    justify-self: stretch;
+    align-self: stretch;
+    grid-column: 1/3;
+    /*grid-column-start: 1;
+    grid-column-end: 3; */
 }
-
-.btn {
-    width: 150px;
-    color: var(--clr-grey-5);
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    border-color: var(--clr-grey-9);
-    border-radius: 5px;
-    /*transition: all 0.2s ease-out;*/
-}
-
 .hide-me {
     visibility: hidden;
 }

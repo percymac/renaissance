@@ -1,86 +1,293 @@
 [
     {
-        "fname": "Chippa1",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Percy",
+        "lname": "Machaba",
+        "profession": "Software Developer(Full Stack)",
+        "cellphone": "082-456 4567",
+        "email": "chippandenga@gmail.com",
+        "photo": "chippa-chippa.png",
+        "home": "Midstream, Ekurhuleni",
+        "mystory": "I am popularly known as Chippa Mamboshe because of my past prowess onthe soccer field. In my latter years I have taken quite a liking for the game of golf. I love golf because it gives one the opportunity to clear ones mind of his worries for over 8 hours. This of course, includes the best part about playing golf, i.e. the 19th hole. It also provides you the opportunity to make new friends as you age gracefully."
     },
     {
-        "fname": "Chippa2",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"        
+        "fname": "Ishmael",
+        "lname": "Mokhoka",
+        "profession": "Land Surveyor",
+        "cellphone": "0822222222",
+        "email": "ishmokhoka@rgc.com",
+        "photo": "MedalChampion2021.jpg",
+        "home": "Moreleta, Pretoria",
+        "mystory": "I am Soso Mokhoka, a native who grew up in Maokeng Kroonstad. I currently reside in Moreleta with my family. I am the  reigning OOM champion at RGC. I have worked hard on my game, spent countless hours at the driving range and the results are there for all to see. I love golf because it affords me the opportunity to stay out late at night and visit Perera and Cofi."
     },
     {
-        "fname": "Chippa3",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Linda",
+        "lname": "Jakavula",
+        "profession": "uMfundisi (Moonlighting)",
+        "cellphone": "0823333333",
+        "email": "lindaj@rgc.com",
+        "photo": "IPSChampion2021.jpg",
+        "home": "Not known",
+        "mystory": "I am Linda Jakavula and the regning RGC IPS champion. Other than golfing, my other passion is my religion. I am also an ordained pastor in the 7th Day Adventist Church. Even as a pastor, I have a full time job at Transnet."
     },
     {
-        "fname": "Chippa4",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Peter",
+        "lname": "Nkwe",
+        "profession": "ICT SAP Specialist",
+        "cellphone": "0824444444",
+        "email": "chippam4@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Pecanwood Golf Estate, Sedibeng"
     },
     {
-        "fname": "Chippa5",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Masiza",
+        "lname": "Qutu",
+        "profession": "Programmer5",
+        "cellphone": "0825555555",
+        "email": "chippa5@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Rooihuiskraal, Centurion"
     },
     {
-        "fname": "Chippa6",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"        
+        "fname": "Nathi",
+        "lname": "Mdladla",
+        "profession": "medical doctor(intensivist)",
+        "cellphone": "0826666666",
+        "email": "chippam@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Glenvista, Johannesburg"       
     },
     {
-        "fname": "Chippa7",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Kgaogelo",
+        "lname": "Sebesho",
+        "profession": "Enteprenuer",
+        "cellphone": "0827777777",
+        "email": "chippam7@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Glenvista, Johannesburg"
     },
     {
-        "fname": "Chippa8",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Charles",
+        "lname": "Ngidi",
+        "cellphone": "0828888888",
+        "profession": "lawyer",
+        "email": "chippam8@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Rondebult, Ekurhuleni"
     },
     {
-        "fname": "Chippa9",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Malose",
+        "lname": "Mokgohloa",
+        "profession": "Programmer9",
+        "cellphone": "0829999999",
+        "email": "chippam9@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Rooihuiskraaal, Centurion"
     },
     {
-        "fname": "Chippa10",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"        
+        "fname": "Ngakane",
+        "lname": "Nong",
+        "cellphone": "0821011010",
+        "profession": "Programmer10",
+        "email": "chippam10@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Moreleta, Pretoria"        
     },
     {
-        "fname": "Chippa11",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Assa",
+        "lname": "Blanket",
+        "profession": "Programmer11",
+        "cellphone": "0820110011",
+        "email": "chippam@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Top secret"
     },
     {
-        "fname": "Chippa12",
-        "lname": "Mamboshe",
-        "cellphone": "0824624899",
-        "mail": "chippam@rgc.com",
-        "photo": "chippa.jpg"
+        "fname": "Ronald",
+        "lname": "Swazi",
+        "profession": "Programmer12",
+        "cellphone": "0820120012",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Waterkloof, Pretoria"
+    },
+    {
+        "fname": "Rams",
+        "lname": "Mabote",
+        "profession": "Media Personality and PR Consultant",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Soweto"
+    },
+    {
+        "fname": "Tagishi",
+        "lname": "Mashego",
+        "profession": "Programmer9",
+        "cellphone": "0829999999",
+        "email": "chippam9@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": ", Kempton Park"
+    },
+    {
+        "fname": "John",
+        "lname": "Segoati",
+        "cellphone": "0821011010",
+        "profession": "medical doctor(anaesthetist)",
+        "email": "chippam10@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Silverlakes Golf REstate, Pretoria"        
+    },
+    {
+        "fname": "Sibusiso",
+        "lname": "Simelane",
+        "profession": "Programmer11",
+        "cellphone": "0820110011",
+        "email": "chippam@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Top secret"
+    },
+    {
+        "fname": "Mahapa",
+        "lname": "Mpitso",
+        "profession": "Programmer12",
+        "cellphone": "0820120012",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Waterkloof, Pretoria"
+    },
+    {
+        "fname": "Collen",
+        "lname": "Macheke",
+        "profession": "Programmer13",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Soweto"
+    },
+    {
+        "fname": "Themba",
+        "lname": "Fundzani",
+        "profession": "Retiree",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Soweto"
+    },
+    {
+        "fname": "Itumeleng",
+        "lname": "Motloung",
+        "profession": "medical doctor",
+        "cellphone": "0829999999",
+        "email": "chippam9@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Bedfordview, Johannesburg"
+    },
+    {
+        "fname": "Dockie",
+        "lname": "Wessie",
+        "cellphone": "0821011010",
+        "profession": "unknown",
+        "email": "chippam10@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Not available"        
+    },
+    {
+        "fname": "Justice",
+        "lname": "Ndaba",
+        "profession": "Hustler",
+        "cellphone": "0820110011",
+        "email": "chippam@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Top secret"
+    },
+    {
+        "fname": "Abbey",
+        "lname": "Matlala",
+        "profession": "ITC Network Specialist",
+        "cellphone": "0820120012",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Waterkloof, Pretoria"
+    },
+    {
+        "fname": "Thabisho",
+        "lname": "Malatji",
+        "profession": "Engineer/Entrepenuer",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Soweto"
+    },  
+    {
+        "fname": "Lucas",
+        "lname": "Mogashoa",
+        "profession": "ITC Security Consultant",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Soweto"
+    },
+    {
+        "fname": "Edwin",
+        "lname": "Moremi",
+        "profession": "ITC Security/Farmer",
+        "cellphone": "0829999999",
+        "email": "chippam9@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": ", Kempton Park"
+    },
+    {
+        "fname": "Lisa",
+        "lname": "Noto",
+        "cellphone": "0821011010",
+        "profession": "medical doctor(anaesthetist)",
+        "email": "chippam10@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Silverlakes Golf REstate, Pretoria"        
+    },
+    {
+        "fname": "Mlungisi",
+        "lname": "Tshangela",
+        "profession": "Construction",
+        "cellphone": "0820110011",
+        "email": "chippam@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Top secret"
+    },
+    {
+        "fname": "Ratshidi",
+        "lname": "Rammutla",
+        "profession": "neurosurgeon",
+        "cellphone": "0820120012",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Waterkloof, Pretoria"
+    },
+    {
+        "fname": "Godfrey",
+        "lname": "Litlake",
+        "profession": "ICT Hardware Specialist",
+        "cellphone": "0820120013",
+        "email": "chippam12@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "eMashona, Roodeport"
+    },
+    {
+        "fname": "Kgosi",
+        "lname": "Pule",
+        "profession": "Lawyer",
+        "cellphone": "0820120012",
+        "email": "kgosi.pule@puleinc.com",
+        "photo": "chippa1.jpg",
+        "home": "Kyalami, Johannesburg"
+    },
+    {
+        "fname": "Mmamathe",
+        "lname": "Makhekhe",
+        "profession": "ITC Consultant",
+        "cellphone": "0829999999",
+        "email": "chippam9@rgc.com",
+        "photo": "chippa1.jpg",
+        "home": "Moreleta, Pretoria"
     }
 ]

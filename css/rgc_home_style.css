@@ -191,7 +191,7 @@ nav {
 .main {
   min-height: 100vh;
   display: grid;
-  gap: 4rem;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr;
   margin: 15px;
   padding: 10px;

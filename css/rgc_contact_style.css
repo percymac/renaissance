@@ -169,18 +169,7 @@ nav {
   justify-content:space-between;
   padding: 1rem;
 }
-.nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
-  background: transparent;
-  border-color: transparent;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.nav-toggle:hover {
-  /*color: var(--clr-primary-1);*/
-  transform: rotate(90deg);
-}
+
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
@@ -194,7 +183,6 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
-  font-size: 12px;
 }
 .social-icons {
   display: none;
@@ -299,7 +287,6 @@ input[type=submit]:hover, input[type=reset]:hover {
     background: var(--clr-primary-7);
     color: #fff;
     border-radius: 5px;
-    font-size: 18px;
   }
   
   .social-icons {
