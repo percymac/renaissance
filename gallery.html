@@ -1,110 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Our Gallery Renaissance Social Golf Club</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="./css/rgc_gallery_style.css">
-</head>
+    <head>
+        <title>Our Gallery Renaissance Social Golf Club</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/rgc_gallery_style.css">
+    </head>
 
-<body>
-    <nav>
-        <div class="nav-center">
-          <!-- nav header-->
-          <div class="nav-header">
-            <h3>gallery - renaissance golf club</h3>
-          </div>
-    
-          <!-- links -->
-          <ul class="links">
-            <li><a href="index.html">about us</a></li>
-            <li><a href="schedule.html">our schedule</a></li>
-            <li><a href="gallery.html">our gallery</a></li>
-            <li><a href="competitions.html">our competitions</a></li>
-            <li><a href="contact.html">contact us</a></li>
-          </ul>
+    <body>
+        <nav>
+            <div class="nav-center">
+            <!-- nav header-->
+            <div class="nav-header">
+                <h3>renaissance golf club</h3>
+            </div>
+        
+            <!-- links -->
+            <ul class="links">
+                <li><a href="index.html">about us</a></li>
+                <li><a href="schedule.html">our schedule</a></li>
+                <li><a href="gallery.html">our gallery</a></li>
+                <li><a href="competitions.html">our competitions</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="gallery-container">    
+            <h3>Renaissance GC Gallery</h3>
+            <!-- images to be populated dynamically in js-->
+            <div id="gallery"></div>
         </div>
-    </nav>
 
-    <div class="gallery-container">
-        <div class="thumbnail">
-            <div>
-                <img src="images/GroupVaalDeGrace2021.jpg" 
-                    style="width:300px"; 
-                    style="height:250px";
-                    alt="Vaal De Grace Estate and Counry Club">
-            </div>
-            <div>
-                <p>Excited RGC golfers, on the second day of our 2021 weekend-away at Vaal De Grace golf course.</p>
-            </div>
-        </div>  
+        <!-- the selected image that will be expanded to prominance-->
+        <div id="gallery-popup">
+            <img src="" alt="" id="gallery-selected-image">
+        </div>
 
-        <div class="thumbnail">  
-            <div>        
-                <img src="images/Group1Emfuleni2021.jpg" 
-                    style="width:300px"; 
-                    style="height:250px";
-                    alt="Emfuleni Estate and Country Golf Club">
-            </div>
-            <div>
-                <p>Just before tee-off at Emfuleni Golf Course, our 2021 weekend away.</p>       
-            </div> 
-        </div> 
-
-        <div class="thumbnail">   
-            <div>       
-                <img src="images/GroupWhiskyCompetition2020.jpg" 
-                    style="width:300px"; 
-                    style="height:350px";
-                    alt="">
-            </div>
-            <div>
-                <p>At the 19th hole at Irene Golf Club, after the inaugural Tubatsana Monareng Whisky Competittion.</p>
-
-            </div>        
-        </div> 
-
-        <div class="thumbnail">
-            <div>
-                <img src="images/GroupVaalDeGrace2021.jpg" 
-                    style="width:300px"; 
-                    style="height:250px";
-                    alt="A picture of excited RGC golfers just before tee-off at Vaal De Grace golf course">
-            </div>
-            <div>
-                <p>Add a description of the image here</p>
-            </div>        
-        </div> 
-
-        <div class="thumbnail"> 
-            <div>        
-                <img src="images/GroupVaalDeGrace2021.jpg" 
-                    style="width:300px"; 
-                    style="height:250px";
-                    alt="">
-            </div>
-            <div>
-                <p>Description of the picture above</p>
-            </div>
-        </div>  
-
-        <div class="thumbnail">          
-            <div>        
-                <img src="images/GroupVaalDeGrace2021.jpg" 
-                    style="width:300px"; 
-                    style="height:250px";
-                    alt="">
-            </div>
-            <div>
-                <p>Description of the picture above</p>
-            </div>
-        </div>  
-    
-    </div>
-
-    <script src="./javascript/js_rgc.js"></script>
-</body>
+        <script src="./javascript/js_rgc_gallery.js"></script>
+    </body>
 </html>

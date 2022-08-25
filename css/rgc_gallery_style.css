@@ -131,25 +131,10 @@ p {
 }
 /*  global classes */
 
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
   }
-}
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
 }
 
 /*
@@ -193,32 +178,58 @@ nav {
 
 /** ----- gallery HTML stylesheet ----- **/
 .gallery-container{
-  padding: 1.5em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr) */
-  gap: 1rem; /* instead of colum-gap and row-gap */
-  grid-auto-rows: minmax(300px, auto); /* will always be at least 250px */
-  border: 1px solid black;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid var(--clr-grey-5);
 }
 
 .gallery-container > div:nth-child(odd) {
   background:var(--clr-grey-9);
 }
 
-.thumbnail {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /*align-items: center;*/
-  border: 3px solid var(--clr-grey-9);     /*transparent;*/
+#gallery {
+  display: grid;
+  /* fit as many as we can, but each min:200 max:1fr */ 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-/*
-.thumbnail > img {
-  justify-self: center;
-}
-*/
 
+.gallery-img {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: translate(-10px 10px);
+  box-shadow: 3px 3px 10px var(--clr-grey-2);
+}
+
+#gallery-popup {
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(39, 35, 35, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 750ms transform;
+  padding: 50px;
+}
+
+#gallery-selected-image {
+  max-height: 100%;
+}
 /** ----- end of gallery stylesheet ----- **/
 
 
