@@ -60,13 +60,11 @@ function searchForGolfer(subjectFullname) {
 
 // determine the golfer selected ...
 golferList.addEventListener('click', (event) => { 
-    
-    const golferListNames = document.querySelectorAll('.name');    golferListNames.forEach ((item) => {
-        if (event.target != item) {
-            // reset highlight on previously selected golfer
-            item.style.color="black";
-            item.style.textDecoration = "none";
-        }
+    const golferListNames = document.querySelectorAll('.name');    
+    golferListNames.forEach ((element) => {
+        // reset highlight on all name elements, mainly the previously selected golfer
+        element.style.color = "black";
+        element.style.textDecoration = "none";
     });
     // highlight the selected golfer
     event.target.style.color = "blue";
