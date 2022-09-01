@@ -1,6 +1,5 @@
 const golferImageContainer = document.querySelector('.golfer-img');
 const golferStoryContainer = document.querySelector('.golfer-details-story');
-
 const golferList = document.querySelector('.golfer-list ul');
 const golferImage = document.querySelector('.golfer-img-1 img');
 const golferName = document.querySelector('.golfer-details-1 #name');
@@ -10,9 +9,27 @@ const golferEmail = document.querySelector('.golfer-details-1 #email');
 const golferHome = document.querySelector('.golfer-details-1 #home');
 const golferStory = document.querySelector('.golfer-story');
 
-let golferData;
 
-function renderHTMLData (index) {
+
+let golferData;
+let prevEvent;
+// function to sort array objects by property valiue
+function sortByFirstName(a, b) {
+    // converting to uppercase to have case-insensitive comparison
+    const name1 = a.fname;
+    const name2 = b.fname;
+
+    let comparison = 0;
+
+    if (name1 > name2) {
+        comparison = 1;
+    } else if (name1 < name2) {
+        comparison = -1;
+    }
+    return comparison;
+}
+
+function renderHTMLData (index) {    
     golferImage.src = "./images/" + golferData[index].photo;
     golferName.innerText = golferData[index].fname + ' ' + golferData[index].lname;
     golferProfession.innerText = golferData[index].profession;
@@ -42,12 +59,21 @@ function searchForGolfer(subjectFullname) {
 }
 
 // determine the golfer selected ...
-golferList.addEventListener('click', (e) => { 
-    /*console.log('   e.target: ', e.target.innerText); */
-    const subjectName = e.target.innerText;
-    const numberOfSubjects = golferList.childElementCount;
+golferList.addEventListener('click', (event) => { 
+    
+    const golferListNames = document.querySelectorAll('.name');    golferListNames.forEach ((item) => {
+        if (event.target != item) {
+            // reset highlight on previously selected golfer
+            item.style.color="black";
+            item.style.textDecoration = "none";
+        }
+    });
+    // highlight the selected golfer
+    event.target.style.color = "blue";
+    event.target.style.textDecoration = "underline";
 
     // search for the index of this golfer from the list of available golfers
+    const subjectName = event.target.innerText;
     golferIndex = searchForGolfer(subjectName);
     if (golferIndex < 0) {
         return;
@@ -56,7 +82,6 @@ golferList.addEventListener('click', (e) => {
     renderHTMLData(golferIndex);
     golferImageContainer.classList.remove('hide-me');
     golferStoryContainer.classList.remove('hide-me');
-
 });
 
 // load the list of MIGS from the provided data file
@@ -65,11 +90,18 @@ async function getMemberGolferData(file) {
     let golferDataString = await golferFileContent.text();
     golferData = JSON.parse(golferDataString);
 
+    // sort the golfers by name
+    let myArrOfGolferObjects = [];
     for (let i=0; i<golferData.length; i++) {
-        /*console.log(golferData[i].fname);*/
+        myArrOfGolferObjects.push({'fname':golferData[i].fname, 'lname': golferData[i].lname});
+    }
+    myArrOfGolferObjects.sort(sortByFirstName);
+    /* console.log('POST-SORT:\n', myArrOfGolferObjects);*/
+
+    for (let i=0; i<myArrOfGolferObjects.length; i++) {
         const li = document.createElement('li');
         const spanGolferName = document.createElement('span');
-        spanGolferName.textContent = golferData[i].fname + ' ' + golferData[i].lname;
+        spanGolferName.textContent = myArrOfGolferObjects[i].fname + ' ' + myArrOfGolferObjects[i].lname;
         spanGolferName.classList.add('name');
 
         // append the golfer name span element to the list item, <li>
@@ -80,7 +112,7 @@ async function getMemberGolferData(file) {
     }
 
     // add a dummy entry to test for not found 
-    for (let k=0; k < 1; k++) {
+    for (let k=0; k < 1; k++) {   
         const li = document.createElement('li');
         const spanGolferName = document.createElement('span');
         spanGolferName.textContent = 'My man Gucci Mane';

@@ -151,10 +151,13 @@ nav {
   align-items: center;
   justify-content:space-between;
   padding: 1rem;
+
+  position: relative;
 }
 
 .links {
   height: auto;
+  width: auto;
   display: flex;
 }
 .links a {
@@ -170,6 +173,41 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
+}
+
+.our-galleries {
+  display: flex;
+  justify-content:center;
+  position: relative;
+}
+
+nav img {
+  margin-top: 4px;
+  width: 15px;
+  height: 15px;
+  color: var(--clr-grey-3);
+}
+
+nav ul ul {
+  background-color: var(--clr-primary-9);
+  border-radius: 0px 0px 5px 5px;
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 25px;
+  left:0;
+  z-index: 1
+}
+
+nav ul li:hover .gallery-sub-menu {
+  display:block;
+  opacity: .95;
+}
+nav ul li:hover .img {
+  transform: rotate(180deg);
+}
+.gallery-sub-menu li {
+  padding-left: 15px;
 }
 
 .social-icons {
